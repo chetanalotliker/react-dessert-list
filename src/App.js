@@ -1,23 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import DessertList from './components/DessertList';
+
+const dessertList = [
+  {
+    id: 1,
+    name: 'Cake',
+    calorie: '200 cal'
+  },
+  {
+    id: 2,
+    name: 'French Fries',
+    calorie: '300 cal'
+  },
+  {
+    id: 3,
+    name: 'Pudding',
+    calorie: '170 cal'
+  },
+  {
+    id: 4,
+    name: 'Gulab Jamun',
+    calorie: '450 cal'
+  }
+]
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DessertList listdata={dessertList} />
+      <a href="https://chetanalotliker.github.io/learn-html-css-javascript/menu-bootstrap.html">Visit Menu</a>
+      <br />
+      <a href="https://stargold-shine-portfolio.netlify.app/">Portfolio</a>
     </div>
   );
 }
